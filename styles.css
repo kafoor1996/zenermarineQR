@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
@@ -39,27 +40,19 @@ section {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
 .contact-info {
   width: 100%;
-  max-width: 500px;
-  margin-bottom: 40px;
 }
 
 .contact-info-item {
   display: flex;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .contact-info-icon {
@@ -80,12 +73,17 @@ section {
 }
 
 .contact-info-content h4 {
-  color: #1da9c0;
+  color: #FFF; /* White color for heading */
   font-size: 1.4em;
   margin-bottom: 5px;
 }
 
-.contact-info-content p {
-  color: #FFF;
+.contact-info-content p a {
+  color: #FFF; /* White color for links */
+  text-decoration: none; /* No underline for links */
   font-size: 1em;
+}
+
+.contact-info-content p a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover for better UX */
 }
